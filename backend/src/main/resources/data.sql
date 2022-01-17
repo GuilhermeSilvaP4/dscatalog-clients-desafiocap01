@@ -1,0 +1,3 @@
+INSERT INTO tb_client ( children, cpf, income, name,birth_date) VALUES (2, '096652xxx', 750.00, 'Guilherme',TIMESTAMP WITH TIME ZONE '1988-04-06T20:50:07.12345Z')
+INSERT INTO tb_client ( children, cpf, income, name,birth_date) VALUES (2, '096652xxx', 1750.00, 'Kaua',TIMESTAMP WITH TIME ZONE '2006-08-27T20:50:07.12345Z')
+INSERT INTO tb_client ( children, cpf, income, name,birth_date) VALUES (2, '096658xxx', 7550.00, 'Arthur',TIMESTAMP WITH TIME ZONE '2017-05-31T20:50:07.12345Z')
