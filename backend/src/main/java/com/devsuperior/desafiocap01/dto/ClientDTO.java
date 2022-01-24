@@ -11,20 +11,20 @@ public class ClientDTO implements Serializable {
 	private String name;
 	private String cpf;
 	private Double income;
-	private Instant birthDate;
 	private Integer children;
+	private Instant birthDate;
 	
 	public ClientDTO(){
 	}
 
-	public ClientDTO(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
+	public ClientDTO(Long id, String name, String cpf, Double income, Integer children ,Instant birthDate) {
 		
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		this.birthDate = birthDate;
 		this.children = children;
+		this.birthDate = birthDate;
 	}
 	
 	public ClientDTO(Client entity) {
@@ -33,8 +33,8 @@ public class ClientDTO implements Serializable {
 		this.name = entity.getName();
 		this.cpf = entity.getCpf();
 		this.income = entity.getIncome();
-		this.birthDate = entity.getBirthDate();
 		this.children = entity.getChildren();
+		this.birthDate = entity.getBirthDate();
 		
 	}
 
@@ -69,6 +69,13 @@ public class ClientDTO implements Serializable {
 	public void setIncome(Double income) {
 		this.income = income;
 	}
+	public Integer getChildren() {
+		return children;
+	}
+
+	public void setChildren(Integer children) {
+		this.children = children;
+	}
 
 	public Instant getBirthDate() {
 		return birthDate;
@@ -78,13 +85,4 @@ public class ClientDTO implements Serializable {
 		this.birthDate = birthDate;
 	}
 
-	public Integer getChildren() {
-		return children;
-	}
-
-	public void setChildren(Integer children) {
-		this.children = children;
-	}
-	
-	
 }
